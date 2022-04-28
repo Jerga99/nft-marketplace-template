@@ -9,8 +9,9 @@ Marketplace has dependencies on multiple technologies.
 * [Ganache](https://trufflesuite.com/ganache/) - private Blockchain, to run application localy
 
 ## To run the app
+1. run `npm install` to install dependencies
 
-1. In the root folder of the application create a `.env.development` file with following content:
+2. In the root folder of the application create a `.env.development` file with following content:
 
 ```
 NEXT_PUBLIC_NETWORK_ID=5777
@@ -24,10 +25,10 @@ PINATA_SECRET_API_KEY={your api secret key from pinata}
 ```
 * (your api pinata key has to allow `pinFileToIPFS` and `pinJSONToIPFS` rules)
 
-2. Then migrate a contract to Ganache, contract can be found in the `contracts` folder. It's called `NftMarket.sol`
+3. Then migrate a contract to Ganache, contract can be found in the `contracts` folder. It's called `NftMarket.sol`
 
-* To migrate the contract run `truffle migrate` in the terminal. While Ganache network is setup and running.
+* To migrate the contract run `truffle migrate` in the terminal while Ganache network is setup and running.
 
-3. Now everything is setup and you can test out the app.
+4. Now everything is setup and you can test out the app.
 
 * Run `npm run dev` in the terminal. App will run at `localhost:3000`
